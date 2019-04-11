@@ -1,5 +1,7 @@
 require 'money'
 
+Money.locale_backend = :i18n
+
 class ActiveRecord::Base
   class << self
     def acts_as_money
